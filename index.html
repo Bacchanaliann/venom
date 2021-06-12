@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/css.css">
 
+
 </head>
 
 <body class="blood">
@@ -20,24 +21,26 @@
                 <img width="46" height="71" src="img/logo.png" alt="logo:venom" class="logo-image">
             </a>
             <nav class="nav">
+                <button class="menu-button">
+                    <span class="menu-button-text">menu</span>
+                    <img src="img/Frame 3.svg" alt="menu" class="menu-icon-button">
+                </button>
+                <button class="menu-close">
+                    <span class="menu-close-text">закрыть</span>
+                    <img src="img/Vector 1.svg" alt="arrow" class="menu-close-icon">
+                    </button>
                 <ul class="nav-menu">
                     <li class="nav-menu-item">
                         <a href="about.html" class="nav-menu-link">о фильме</a>
                     </li>
-                </ul>
-                <ul class="nav-menu">
                     <li class="nav-menu-item">
-                        <a href="about.html" class="nav-menu-link">трейлер</a>
+                        <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="nav-menu-link">трейлер</a>
                     </li>
-                </ul>
-                <ul class="nav-menu">
                     <li class="nav-menu-item">
                         <a href="about.html" class="nav-menu-link">актеры</a>
                     </li>
-                </ul>
-                <ul class="nav-menu">
                     <li class="nav-menu-item">
-                        <a href="premier.html" class="nav-menu-link">премера</a>
+                        <a href="about.html" class="nav-menu-link">премера</a>
                     </li>
                 </ul>
             </nav>
@@ -52,10 +55,10 @@
             <!-- /.film-text -->
             <div class="button-groop">
 
-                <button class="button button-primary">
-                    <img width="15" src="img/play.svg" alt="play" class="button-icon">
-                <span class="button-text">смотреть трейлер</span>
-                </button>
+                <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primary">
+                    <img width="15" src="img/play-min.svg" alt="play" class="button-icon">
+                    <span class="button-text">смотреть трейлер</span>
+                </a>
                 <a href="trailer.html" class="button button-link">
                     <img width="15" src="img/ticket.svg" alt="ticket" class="button-icon">
                     <span class="button-text">билеты на премеру</span>
@@ -64,8 +67,13 @@
             </div>
         </div>
         <!-- /.film -->
+
+        <img src="img/venom.png" alt="photo: venom" class="venom">
     </div>
-    <img src="img/venom.png" alt="photo: venom" class="venom">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
