@@ -272,7 +272,7 @@ video {
 
 .menu-button-x {
     margin-right: 50px;
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 .first {
@@ -467,9 +467,9 @@ video {
         -o-transition: transform 0.2s;
         transition: transform 0.2s;
         transition: transform 0.2s, -webkit-transform 0.2s;
-        -webkit-transform: translateX(70%);
-        -ms-transform: translateX(70%);
-        transform: translateX(70%);
+        -webkit-transform: translateX(60%);
+        -ms-transform: translateX(60%);
+        transform: translateX(60%);
     }
     .nav-menu-item {
         margin-top: 7px;
@@ -477,7 +477,7 @@ video {
     }
     .nav-menu-link {
         color: #14131a;
-        margin-left: 5%;
+        margin-left: 10%;
     }
     .venom {
         top: 20%;
