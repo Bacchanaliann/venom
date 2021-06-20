@@ -2,54 +2,54 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>о фильме</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/css.css">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О фильме — Venom 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="primary-bg">
     <div class="container">
         <header class="header">
             <a href="index.html" class="logo-link">
-                <img width="46" height="71" src="img/logo.png" alt="logo:venom" class="logo-image">
+                <img width="46" height="71" src="img/logo.png" alt="logo: venom" class="logo-image" />
             </a>
             <nav class="nav">
                 <button class="menu-button">
-                    <span class="menu-button-text">menu</span>
-                    <img src="img/Frame 3.svg" alt="menu" class="menu-icon-button">
-                </button>
-                <button class="menu-close">
-                    <span class="menu-close-text">закрыть</span>
-                    <img src="img/Vector 1.svg" alt="arrow" class="menu-close-icon">
-                    </button>
+                <span class="menu-button-text">меню</span>
+                <div class="menu-button-icon"><span class='qwe'></span><span></span><span class='asd'></span></div>
+              </button>
+                <button class="menu-button-close">
+                <span class="menu-button-x">закрыть</span>
+              </button>
                 <ul class="nav-menu">
                     <li class="nav-menu-item">
                         <a href="about.html" class="nav-menu-link">о фильме</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="nav-menu-link">трейлер</a>
+                        <a data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs" class="nav-menu-link">трейлер</a>
                     </li>
                     <li class="nav-menu-item">
                         <a href="about.html" class="nav-menu-link">актеры</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="about.html" class="nav-menu-link">премера</a>
+                        <a href="about.html" class="nav-menu-link">премьера</a>
                     </li>
                 </ul>
             </nav>
-
         </header>
         <div class="content">
             <div class="col">
-                <h2 class="concent-title">О фильме</h2>
-                <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
-                <h3 class="content-subtitle">в главных ролях</h3>
+                <h2 class="content-title">О фильме</h2>
+                <p class="content-text">
+                    В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.
+                </p>
+                <h3 class="content-subtitle">В главных ролях</h3>
                 <ul class="list column-2">
                     <li class="list-item">Том Харди</li>
                     <li class="list-item">Мишель Уильямс</li>
@@ -63,16 +63,18 @@
                     <li class="list-item">Пегги Лу</li>
                 </ul>
                 <div class="trailer">
-                    <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0">
-                        <img src="img/play.svg" alt="play button" class="play-icon">
-                    </a>>
+                    <button data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs" class="play">
+            <img src="img/play.svg" alt="icon: play" class="play-icon" />
+          </button>
                 </div>
+                <!-- /.trailer -->
             </div>
             <!-- /.col -->
             <div class="col">
-                <div class="poster-wrapper"><img src="img/poster.jpg" alt="poster" class="poster">
+                <div class="poster-wrapper">
+                    <img src="img/poster.jpg" alt="photo: poster venom 2" class="poster" />
                     <div class="creators">
-                        <h3 class="content-subtitle">Режисер</h3>
+                        <h3 class="content-subtitle">Режиссер</h3>
                         <ul class="list">
                             <li class="list-item">Энди Серкис</li>
                         </ul>
@@ -89,18 +91,59 @@
                         </ul>
                     </div>
                 </div>
-
-
+                <!-- /.creators -->
             </div>
             <!-- /.col -->
         </div>
-        <!-- /.film -->
+        <!-- /.content -->
     </div>
-    <script src="js/js.js"></script>
+    <!-- /.container -->
+
+    <div class="hide-form">
+        <button class="order-trigger">
+      — И куда едем?
+    </button>
+        <div class="order-ticket">
+            <form class="order-ticket__form">
+                <fieldset class="order-ticket__form-wrapper">
+                    <legend class="order-ticket__title">Заполните форму</legend>
+                    <small class="order-ticket__description">И получите на почту расписание ближайших сеансов в вашем городе и возможные акции</small>
+                    <label class="order-ticket__label">
+            <input class="order-ticket__input" type="text" required name="name">
+            <span class="order-ticket__label-text">Имя</span>
+          </label>
+                    <label class="order-ticket__label">
+            <input class="order-ticket__input" type="text" name="surname">
+            <span class="order-ticket__label-text">Фамилия</span>
+          </label>
+                    <label class="order-ticket__label">
+            <input class="order-ticket__input" type="text" required name="city">
+            <span class="order-ticket__label-text">Город</span>
+          </label>
+                    <label class="order-ticket__label order-ticket__label-focus">
+            <input class="order-ticket__input" type="email" required name="mail">
+            <span class="order-ticket__label-text">e-mail</span>
+          </label>
+                    <label class="order-ticket__label">
+            <input class="order-ticket__checkbox" type="checkbox" required name="personal" value="agree">
+            <span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a href="#">персональных данных</a></span>
+          </label>
+                    <button>Отправить</button>
+                </fieldset>
+                <div class="order-ticket__preloader-wrapper">
+                    <video loop muted autoplay playsinline src="img/6.mp4" type="video/mp4"></video>
+                </div>
+                <fieldset class="order-ticket__thanks-wrapper">
+                    <legend>Спасибо <span class="order-ticket__thanks-name">-имя-</span></legend>
+                    <p>Вам на почту в скором времени будет отправлено письмо с расписание сеансов в вашем городе</p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
