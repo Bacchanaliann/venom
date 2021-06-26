@@ -276,7 +276,7 @@ video {
 }
 
 .first {
-    transform: translate(11px, -5px) rotate(30deg);
+    transform: translate(9px, -1px) rotate(30deg);
     transform-origin: left top;
     max-width: 50%;
 }
