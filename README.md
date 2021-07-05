@@ -1,8 +1,8 @@
-# venom — учебный проект Glo Academy 
-## Проект выполнил: Иванов Иван
+# venom — учебный проект
+## Проект выполнил
 
 В проекте используются: 
-- HTML 
+- HTML Cancel changes
 - CSS 
 - Javascript 
 - Normalize
